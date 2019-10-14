@@ -1,0 +1,49 @@
+// // Part 1
+// var img = new SimpleImage("hilton.jpg");
+// print(img);
+
+// for( var pixel of img.values())
+// {
+// if( pixel.getX() <= img.getWidth()/3)
+// {
+// pixel.setRed(255);
+
+// }
+// else if (pixel.getX() >= img.getWidth()/3 && pixel.getX() <= img.getWidth()*(2/3))
+// {
+//     pixel.setGreen(255);
+    
+// }
+// else 
+// {
+//     pixel.setBlue(255);
+// }
+// }
+// print(img);
+
+// //Part 2
+// var img = new SimpleImage("eastereggs.jpg");
+// print(img);
+
+// for( var pixel of img.values()){
+//     SwapRedGreen();
+// }
+// function SwapRedGreen()
+// {
+//     pixel.setRed(pixel.getGreen());
+//     pixel.setGreen(pixel.getRed());
+// }
+// print(img);
+
+//Part 3
+var img = new SimpleImage("duke_blue_devil.png");
+print(img);
+
+for(var pixel of img.values()){
+    if(pixel.getBlue() == 227 && pixel.getGreen() == 51) {
+        pixel.setRed(225);
+        pixel.setBlue(0);
+        pixel.setGreen(225);
+    }
+}
+print(img);
